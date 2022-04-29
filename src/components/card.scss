@@ -1,0 +1,126 @@
+@import 'breakpoints';
+
+.Card {
+  @include sm{
+    width: 3.37cm;
+    height: 8.12cm;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 1px 15px 1px #dfdfdf;
+    color: black;
+    overflow: hidden;
+    margin: 1%;
+    margin-top: .9cm;
+
+  }
+  @include md
+{
+  width: 3.3cm;
+  height: 7.5cm;
+  }
+  @include lg
+{
+  width: 3.8cm;
+  height:  8.9cm;
+  }
+  @include xl
+{
+  width: 4.1cm;
+  height: 9.9cm;
+  }
+  @include xxl
+  {
+    width: 5cm;
+    height: 9.9cm;
+    }
+  
+  @include xxxl
+  {
+    width: 5.7cm;
+    height: 9.9cm;
+    }
+}
+.upper-container
+{
+  @include sm
+  { 
+     height: 100px;
+ 
+    img{ 
+        width: 100%;
+        height: 100%;
+        position: relative
+      }
+  }
+  @include md
+  { 
+     height: 150px;
+ 
+    img{ 
+        width: 100%;
+        height: 100%;
+        position: relative
+      }
+  }
+  
+  @include lg
+  { 
+     height: 200px;
+ 
+    img{ 
+        width: 100%;
+        height: 100%;
+        position: relative
+      }
+  }
+  
+  @include xl
+  { 
+     height: 220px;
+ 
+    img{ 
+        width: 100%;
+        height: 100%;
+        position: relative
+      }
+  }
+}
+  
+
+        
+
+.lower-container
+{
+    height: 100px;
+    background: white;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+.image-container
+{    
+  margin-left: .3cm;
+  display: flex;
+  margin-top: -1.7cm;
+  width: 50px;
+  height: 50px;
+  background-color: #061a1f;
+  border-radius: 50%;
+  position: absolute;
+}
+h4
+ {   
+  margin-left: .3cm;
+  margin-top: 1cm;
+  text-align: left;
+}
+p
+{
+  text-align: left;
+  margin-left: .3cm;
+  margin-top: -.4cm;
+  size: 10px;
+  color: #a7a7a7;
+}
+
+
+

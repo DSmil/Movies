@@ -1,0 +1,43 @@
+@import "../components/breakpoints.scss";
+h1
+{
+    margin-top: 3.5cm;
+    height: 1cm;
+    margin-left: -30% ;
+}
+.load-more
+{
+    @include sm{
+        margin-bottom: 2cm;
+        margin-top: .5cm;
+        height: 1.2cm;
+        border-radius: 5px;
+        margin-right: 5.1cm;
+        background-color: #00acda;
+        border: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    @include md{
+        margin-right: .3cm;
+    }
+
+    @include lg{
+        margin-right: .2cm;
+    }
+
+    @include xl{
+        margin-right: .4cm;
+    }
+
+    @include xxl{
+        margin-right: .4cm;
+    }
+
+    @include xxl{
+        margin-right: .85cm;
+    }
+   
+}
