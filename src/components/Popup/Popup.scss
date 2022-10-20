@@ -1,0 +1,136 @@
+@import '../breakpoints.scss';
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    font-family: "Quicksand";
+    @include sm{
+        height: 34px;
+        width: 139px;
+        border-radius: 5px;
+        background-color: #DD2C2C;
+        border: none;
+        color: white;
+        font-size: 17px;
+        padding: 0.5rem 1.7rem;
+        margin: 0;
+        position: absolute;
+        top: 90%;
+        right: 12%;
+    }
+
+    @include md{
+        margin-right:1%;
+    }
+
+    @include lg{
+        margin-right: 0%;
+    }
+
+    @include xl{
+   
+        margin-right: -5%;
+    }
+
+    @include xxl{
+        margin-right: 6%;
+    }
+
+    @include xxl{
+        margin-right: 5%;
+    }
+
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+.modal{
+    z-index: 1;
+    
+}
+.overlay {
+    background: rgba(49,49,49,0.8);
+
+}
+.modal-content {
+    position: absolute;
+    display:inline-flex;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+
+}
+
+.close-modal {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    padding: 5px 7px;
+    height: 31px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #DD2C2C;
+    border: none;
+    color: white;
+    font-size: 17px;
+    padding: 0.4rem 1.4rem;
+    margin-bottom: 0.4cm;
+    font-family: "Quicksand";
+}
+.popup-title
+{
+    padding-top: 1cm;
+    font-size: 17px;
+
+
+}
+
+.picture
+{
+    margin-left: -3%;
+    padding-right: 3%;
+}
+
+.text
+{
+    margin-top: -10%;
+    font-size: 15px;
+    font-family: "Quicksand";
+}
+
+.rows {
+    margin-top: -.4cm;
+    font-size: 15px;
+    padding: 0;
+  
+    li {
+
+        display: flex; 
+        color: grey;
+        padding-bottom: 5px;
+        max-width: 600px;
+        min-width: 300px;
+      span {
+        left: 0;
+        color: black;
+        font-weight: bold;
+        padding-right: 1.5%;
+
+      }
+    }
+  }

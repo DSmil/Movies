@@ -1,6 +1,7 @@
 @import 'breakpoints';
 
 .Card {
+  
   @include sm{
     width: 3.37cm;
     height: 8.12cm;
@@ -11,6 +12,7 @@
     overflow: hidden;
     margin: 1%;
     margin-top: .9cm;
+    margin-bottom:50px;
 
   }
   @include md
@@ -91,10 +93,12 @@
 
 .lower-container
 {
+  top: -5%;
     height: 100px;
     background: white;
     text-align: center;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Quicksand";
+    position: relative;
 }
 .image-container
 {    
@@ -109,9 +113,9 @@
 }
 h4
  {   
-  margin-left: .3cm;
-  margin-top: 1cm;
+  
   text-align: left;
+  
 }
 p
 {
@@ -122,5 +126,71 @@ p
   color: #a7a7a7;
 }
 
+.more-info
+{
+  
+    @include sm{
+        height: 34px;
+        width: 139px;
+        border-radius: 5px;
+        background-color: #DD2C2C;
+        border: none;
+        color: white;
+        font-size: 17px;
+        padding: 0.5rem 1.7rem;
+        text-align: center;
+        display: inline-block;
+        bottom:0;
+        
+    }
+
+    @include md{
+        margin-right: .3cm;
+    }
+
+    @include lg{
+        margin-right: .2cm;
+    }
+
+    @include xl{
+        margin-right: .4cm;
+    }
+
+    @include xxl{
+        margin-right: .4cm;
+    }
+
+    @include xxl{
+        margin-right: .85cm;
+    }
+   
+}
+
+.btn-primary
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: bottom;
+  padding: 10px;  
+  position: 'absolute';
+  bottom:0;
+
+}
+
+.title
+{
+  
+  font-size: 15px;
+  margin-left: .3cm;
+  margin-top: .8cm;
+  padding-bottom: .8cm;
+}
+.price
+{
+  position: absolute;
+  justify-content:center;
+  top: 44%;
+  left: 39%;
+}
 
 
